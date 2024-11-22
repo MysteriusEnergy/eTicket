@@ -1,0 +1,1858 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/principal_responsivo.dwt.aspx" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+    <script language="javascript">
+
+        var API_URL = "https://api.eticket.com.co";
+        var API_CLIENT_ID = "3";
+        var API_CLIENT_SECRET = "3f7970d40fd44cfa89b62cef89caf56f";
+
+        var _jsRedesRequeridas = [
+            'GOOGLE_SOCIAL_TRACKING',
+            'FACEBOOK',
+            'FACEBOOK_PIXEL',
+            'TIKTOK_PIXEL',
+            'TWITTER',
+            'PINGDOM'
+        ];
+
+        var _fbAppId = "189845245141894";
+        var _fbPixelId = "192204664892511";
+        var _tkPixelId = "CISREBRC77U8FG445CS0";
+        var _glClientId = "369002369805-p1l4oknr7sahl7iqvfcope4mksvbs4qu.apps.googleusercontent.com";
+        var _glPlusId = "114295757726502318402";
+        var _glAnalyticsId = "G-5S9FR17Y77";
+        var _pingdomId = "5ac29b510b346800070005f8";
+        var _glGAEventoId = "";
+        var _glAWConversionId = "";
+        var _overrideGaTitle;
+
+    </script>
+
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>eticket - Compra de boletos para eventos en Colombia</title>
+    <meta name="title"
+        content="eticket. Boletos, boletas y entradas para Conciertos, deportes, teatro, culturales, familiares, congresos, especiales, Sitio Oficial de eticket Colombia" />
+    <meta name="description"
+        content="Venta de entradas para los mejores espect�culos. Busca y encuentra entradas para los pr�ximos Conciertos, eventos deportivos, obras de teatro, culturales, familiares, congresos y eventos especiales.  Compra tus entradas en linea o  cualquiera de nuestros puntos de venta autorizados." />
+    <!-- InstanceEndEditable -->
+
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=8" />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+    <script
+        type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "errorBeacon": "bam.nr-data.net", "licenseKey": "0cc7dda359", "applicationID": "146570523", "transactionName": "ZVMBYxcCWhdTARJbWFwZImQ1TFwLXwdIU0RCTg==", "queueTime": 0, "applicationTime": 14, "agent": "", "atts": "" }</script>
+    <script
+        type="text/javascript">(window.NREUM || (NREUM = {})).init = { ajax: { deny_list: ["bam.nr-data.net"] } }; (window.NREUM || (NREUM = {})).loader_config = { licenseKey: "0cc7dda359", applicationID: "146570523" }; window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) { function r(n) { if (!e[n]) { var i = e[n] = { exports: {} }; t[n][0].call(i.exports, function (e) { var i = t[n][1][e]; return r(i || e) }, i, i.exports) } return e[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var i = 0; i < n.length; i++)r(n[i]); return r }({ 1: [function (t, e, n) { function r() { } function i(t, e, n, r) { return function () { return s.recordSupportability("API/" + e + "/called"), o(t + e, [u.now()].concat(c(arguments)), n ? null : this, r), n ? void 0 : this } } var o = t("handle"), a = t(9), c = t(10), f = t("ee").get("tracer"), u = t("loader"), s = t(4), d = NREUM; "undefined" == typeof window.newrelic && (newrelic = d); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], l = "api-", v = l + "ixn-"; a(p, function (t, e) { d[e] = i(l, e, !0, "api") }), d.addPageAction = i(l, "addPageAction", !0), d.setCurrentRouteName = i(l, "routeName", !0), e.exports = newrelic, d.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (t, e) { var n = {}, r = this, i = "function" == typeof e; return o(v + "tracer", [u.now(), t, n], r), function () { if (f.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], n), i) try { return e.apply(this, arguments) } catch (t) { throw f.emit("fn-err", [arguments, this, t], n), t } finally { f.emit("fn-end", [u.now()], n) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) { m[e] = i(v, e) }), newrelic.noticeError = function (t, e) { "string" == typeof t && (t = new Error(t)), s.recordSupportability("API/noticeError/called"), o("err", [t, u.now(), !1, e]) } }, {}], 2: [function (t, e, n) { function r(t) { if (NREUM.init) { for (var e = NREUM.init, n = t.split("."), r = 0; r < n.length - 1; r++)if (e = e[n[r]], "object" != typeof e) return; return e = e[n[n.length - 1]] } } e.exports = { getConfiguration: r } }, {}], 3: [function (t, e, n) { var r = !1; try { var i = Object.defineProperty({}, "passive", { get: function () { r = !0 } }); window.addEventListener("testPassive", null, i), window.removeEventListener("testPassive", null, i) } catch (o) { } e.exports = function (t) { return r ? { passive: !0, capture: !!t } : !!t } }, {}], 4: [function (t, e, n) { function r(t, e) { var n = [a, t, { name: t }, e]; return o("storeMetric", n, null, "api"), n } function i(t, e) { var n = [c, t, { name: t }, e]; return o("storeEventMetrics", n, null, "api"), n } var o = t("handle"), a = "sm", c = "cm"; e.exports = { constants: { SUPPORTABILITY_METRIC: a, CUSTOM_METRIC: c }, recordSupportability: r, recordCustom: i } }, {}], 5: [function (t, e, n) { function r() { return c.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a } function i() { return o } var o = (new Date).getTime(), a = o, c = t(11); e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = i }, {}], 6: [function (t, e, n) { function r(t, e) { var n = t.getEntries(); n.forEach(function (t) { "first-paint" === t.name ? l("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && l("timing", ["fcp", Math.floor(t.startTime)]) }) } function i(t, e) { var n = t.getEntries(); if (n.length > 0) { var r = n[n.length - 1]; if (u && u < r.startTime) return; var i = [r], o = a({}); o && i.push(o), l("lcp", i) } } function o(t) { t.getEntries().forEach(function (t) { t.hadRecentInput || l("cls", [t]) }) } function a(t) { var e = navigator.connection || navigator.mozConnection || navigator.webkitConnection; if (e) return e.type && (t["net-type"] = e.type), e.effectiveType && (t["net-etype"] = e.effectiveType), e.rtt && (t["net-rtt"] = e.rtt), e.downlink && (t["net-dlink"] = e.downlink), t } function c(t) { if (t instanceof y && !w) { var e = Math.round(t.timeStamp), n = { type: t.type }; a(n), e <= v.now() ? n.fid = v.now() - e : e > v.offset && e <= Date.now() ? (e -= v.offset, n.fid = v.now() - e) : e = v.now(), w = !0, l("timing", ["fi", e, n]) } } function f(t) { "hidden" === t && (u = v.now(), l("pageHide", [u])) } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var u, s, d, p, l = t("handle"), v = t("loader"), m = t(8), g = t(3), y = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { s = new PerformanceObserver(r); try { s.observe({ entryTypes: ["paint"] }) } catch (h) { } d = new PerformanceObserver(i); try { d.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (h) { } p = new PerformanceObserver(o); try { p.observe({ type: "layout-shift", buffered: !0 }) } catch (h) { } } if ("addEventListener" in document) { var w = !1, b = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; b.forEach(function (t) { document.addEventListener(t, c, g(!1)) }) } m(f) } }, {}], 7: [function (t, e, n) { function r(t, e) { if (!i) return !1; if (t !== i) return !1; if (!e) return !0; if (!o) return !1; for (var n = o.split("."), r = e.split("."), a = 0; a < r.length; a++)if (r[a] !== n[a]) return !1; return !0 } var i = null, o = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var c = navigator.userAgent, f = c.match(a); f && c.indexOf("Chrome") === -1 && c.indexOf("Chromium") === -1 && (i = "Safari", o = f[1]) } e.exports = { agent: i, version: o, match: r } }, {}], 8: [function (t, e, n) { function r(t) { function e() { t(c && document[c] ? document[c] : document[o] ? "hidden" : "visible") } "addEventListener" in document && a && document.addEventListener(a, e, i(!1)) } var i = t(3); e.exports = r; var o, a, c; "undefined" != typeof document.hidden ? (o = "hidden", a = "visibilitychange", c = "visibilityState") : "undefined" != typeof document.msHidden ? (o = "msHidden", a = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (o = "webkitHidden", a = "webkitvisibilitychange", c = "webkitVisibilityState") }, {}], 9: [function (t, e, n) { function r(t, e) { var n = [], r = "", o = 0; for (r in t) i.call(t, r) && (n[o] = e(r, t[r]), o += 1); return n } var i = Object.prototype.hasOwnProperty; e.exports = r }, {}], 10: [function (t, e, n) { function r(t, e, n) { e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0); for (var r = -1, i = n - e || 0, o = Array(i < 0 ? 0 : i); ++r < i;)o[r] = t[e + r]; return o } e.exports = r }, {}], 11: [function (t, e, n) { e.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (t, e, n) { function r() { } function i(t) { function e(t) { return t && t instanceof r ? t : t ? u(t, f, a) : a() } function n(n, r, i, o, a) { if (a !== !1 && (a = !0), !l.aborted || o) { t && a && t(n, r, i); for (var c = e(i), f = m(n), u = f.length, s = 0; s < u; s++)f[s].apply(c, r); var p = d[w[n]]; return p && p.push([b, n, r, c]), c } } function o(t, e) { h[t] = m(t).concat(e) } function v(t, e) { var n = h[t]; if (n) for (var r = 0; r < n.length; r++)n[r] === e && n.splice(r, 1) } function m(t) { return h[t] || [] } function g(t) { return p[t] = p[t] || i(n) } function y(t, e) { l.aborted || s(t, function (t, n) { e = e || "feature", w[n] = e, e in d || (d[e] = []) }) } var h = {}, w = {}, b = { on: o, addEventListener: o, removeEventListener: v, emit: n, get: g, listeners: m, context: e, buffer: y, abort: c, aborted: !1 }; return b } function o(t) { return u(t, f, a) } function a() { return new r } function c() { (d.api || d.feature) && (l.aborted = !0, d = l.backlog = {}) } var f = "nr@context", u = t("gos"), s = t(9), d = {}, p = {}, l = e.exports = i(); e.exports.getOrSetContext = o, l.backlog = d }, {}], gos: [function (t, e, n) { function r(t, e, n) { if (i.call(t, e)) return t[e]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(t, e, { value: r, writable: !0, enumerable: !1 }), r } catch (o) { } return t[e] = r, r } var i = Object.prototype.hasOwnProperty; e.exports = r }, {}], handle: [function (t, e, n) { function r(t, e, n, r) { i.buffer([t], r), i.emit(t, e, n) } var i = t("ee").get("handle"); e.exports = r, r.ee = i }, {}], id: [function (t, e, n) { function r(t) { var e = typeof t; return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, o, function () { return i++ }) } var i = 1, o = "nr@id", a = t("gos"); e.exports = r }, {}], loader: [function (t, e, n) { function r() { if (!M++) { var t = T.info = NREUM.info, e = m.getElementsByTagName("script")[0]; if (setTimeout(u.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return u.abort(); f(x, function (e, n) { t[e] || (t[e] = n) }); var n = a(); c("mark", ["onload", n + T.offset], null, "api"), c("timing", ["load", n]); var r = m.createElement("script"); 0 === t.agent.indexOf("http://") || 0 === t.agent.indexOf("https://") ? r.src = t.agent : r.src = l + "://" + t.agent, e.parentNode.insertBefore(r, e) } } function i() { "complete" === m.readyState && o() } function o() { c("mark", ["domContent", a() + T.offset], null, "api") } var a = t(5), c = t("handle"), f = t(9), u = t("ee"), s = t(7), d = t(2), p = t(3), l = d.getConfiguration("ssl") === !1 ? "http" : "https", v = window, m = v.document, g = "addEventListener", y = "attachEvent", h = v.XMLHttpRequest, w = h && h.prototype, b = !1; NREUM.o = { ST: setTimeout, SI: v.setImmediate, CT: clearTimeout, XHR: h, REQ: v.Request, EV: v.Event, PR: v.Promise, MO: v.MutationObserver }; var E = "" + location, x = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1216.min.js" }, O = h && w && w[g] && !/CriOS/.test(navigator.userAgent), T = e.exports = { offset: a.getLastTimestamp(), now: a, origin: E, features: {}, xhrWrappable: O, userAgent: s, disabled: b }; if (!b) { t(1), t(6), m[g] ? (m[g]("DOMContentLoaded", o, p(!1)), v[g]("load", r, p(!1))) : (m[y]("onreadystatechange", i), v[y]("onload", r)), c("mark", ["firstbyte", a.getLastTimestamp()], null, "api"); var M = 0 } }, {}], "wrap-function": [function (t, e, n) { function r(t, e) { function n(e, n, r, f, u) { function nrWrapper() { var o, a, s, p; try { a = this, o = d(arguments), s = "function" == typeof r ? r(o, a) : r || {} } catch (l) { i([l, "", [o, a, f], s], t) } c(n + "start", [o, a, f], s, u); try { return p = e.apply(a, o) } catch (v) { throw c(n + "err", [o, a, v], s, u), v } finally { c(n + "end", [o, a, p], s, u) } } return a(e) ? e : (n || (n = ""), nrWrapper[p] = e, o(e, nrWrapper, t), nrWrapper) } function r(t, e, r, i, o) { r || (r = ""); var c, f, u, s = "-" === r.charAt(0); for (u = 0; u < e.length; u++)f = e[u], c = t[f], a(c) || (t[f] = n(c, s ? f + r : r, i, f, o)) } function c(n, r, o, a) { if (!v || e) { var c = v; v = !0; try { t.emit(n, r, o, e, a) } catch (f) { i([f, n, r, o], t) } v = c } } return t || (t = s), n.inPlace = r, n.flag = p, n } function i(t, e) { e || (e = s); try { e.emit("internal-error", t) } catch (n) { } } function o(t, e, n) { if (Object.defineProperty && Object.keys) try { var r = Object.keys(t); return r.forEach(function (n) { Object.defineProperty(e, n, { get: function () { return t[n] }, set: function (e) { return t[n] = e, e } }) }), e } catch (o) { i([o], n) } for (var a in t) l.call(t, a) && (e[a] = t[a]); return e } function a(t) { return !(t && t instanceof Function && t.apply && !t[p]) } function c(t, e) { var n = e(t); return n[p] = t, o(t, n, s), n } function f(t, e, n) { var r = t[e]; t[e] = c(r, n) } function u() { for (var t = arguments.length, e = new Array(t), n = 0; n < t; ++n)e[n] = arguments[n]; return e } var s = t("ee"), d = t(10), p = "nr@original", l = Object.prototype.hasOwnProperty, v = !1; e.exports = r, e.exports.wrapFunction = c, e.exports.wrapInPlace = f, e.exports.argsToArray = u }, {}] }, {}, ["loader"]);</script>
+    <meta name="rating" content="general" />
+    <meta name="copyright" content="2010, eticket" />
+    <meta name="revisit-after" content="4 Days" />
+    <meta name="expires" content="never" />
+    <meta name="distribution" content="global" />
+    <meta name="robots" content="index" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta property="fb:app_id" content="189845245141894" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/webpage/icons/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="images/webpage/icons/android-hd.png" />
+    <link rel="publisher" href="https://plus.google.com/114295757726502318402" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css' />
+    <link href="/styles/v-637901325414482600/icon-eticket.css" type="text/css" rel="stylesheet" />
+    <!--<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/styles/v-638636856187432883/styles_v3.css" type="text/css" rel="stylesheet" />-->
+    <link href="/styles/v-638636856187432883/styles_v3.css" type="text/css" rel="stylesheet" />
+    <link href="/styles/v-637901325431688245/styles_v3_fondo.css" type="text/css" rel="stylesheet" />
+    <link href="/styles/v-637901325409638633/dropkick_wp_custom.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S9FR17Y77"></script>
+    <script language="javascript" src="/js/tappy/v-637901324185671439/tappy.js"></script>
+    <script language="javascript" src="/js/v-638078453217091547/jquery.cookies.js"></script>
+    <script type="text/javascript" src="/js/dropkickjs/lib/v-637901324230696792/dropkick_wp.js"></script>
+    <script type="text/javascript" src="/js/v-638078453201621153/eticketjs.js"></script>
+    <script type="text/javascript" src="/js/v-638029457839907397/oauth.js"></script>
+    <script type="text/javascript" src="/js/v-638660836097575199/redes_gtag.js"></script>
+    <script type="text/javascript" src="/js/v-638078453197559114/eticket_template.js"></script>
+    <script src="/js/lazysizes/v-637901324001930500/lazysizes5.2.0.min.js" async></script>
+
+
+
+
+
+    <!--Google Structured Data Attributes-->
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "eticket",
+  "url": "https://www.eticket.co/",
+  "logo": "https://www.eticket.co/images/eticket_co.png",
+  "sameAs": [
+    "https://www.facebook.com/eticketcol",
+    "https://www.twitter.com/eticketcol",
+    "https://plus.google.com/114295757726502318402",
+	"https://www.instagram.com/eticketcol"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+   	"telephone": "+57-1-508-74-23",
+	"contactType": "customer service"
+  }
+}
+</script>
+
+    <!--FACEBOOK PIXEL NOSCRIPT-->
+    <noscript><img height="1" width="1"
+            src="https://www.facebook.com/tr?id=192204664892511&ev=PageView&noscript=1" /></noscript>
+
+    <!-- InstanceBeginEditable name="head" -->
+    <meta property="og:image" content="https://www.eticket.co//images/webpage/ogimage_eticket.jpg" />
+    <link rel="canonical" href="https://www.eticket.co/">
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js"></script>
+
+
+    <!--banner rorator -->
+    <link href="js/brotator/v-637901323869166072/allinone_bannerRotator.css" rel="stylesheet" type="text/css">
+    <!--el siguiente es el ui de jquery que ocupa el bannerrotator-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="../js/brotator/js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <script src="../js/brotator/js/allinone_bannerRotator.js" type="text/javascript"></script>
+    <!-- Termina banner rotator del allinone Javascript file (inluyendo el jquery) -->
+
+    <!-- este es el c�digo de google search https://developers.google.com/search/docs/guides/enhance-site -->
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.eticket.co/",
+  "name": "eticket",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.eticket.co/busqueda.aspx?buscar={search_term}",
+    "query-input": "required name=search_term"
+  }
+}
+</script>
+
+
+
+    <!-- InstanceEndEditable -->
+
+</head>
+
+<body lang="es-mx" style="margin:0px">
+    <form method="post" action="./" id="frmGlobal">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="KdY1FVtEBfQPU+XOCRlZ4Oi4mlPfRXtUtihF7Rmuk0HcbT6fDuQmLd8NUdVna5UaiI7X+au1+5lfMhLjleluTE02VBzrFeGy0danr/Ue3Y1ZT1vl7xmJoCOIRMZlPEejDiztknHei6ZqMQjX3V5MM78BwsvIRtB9INoGt36O/GcvhX6jux4RzXkEpuoiYvHqZJ3MpaoddnZRBjzWvfTqORfvdjRCBJMqPTfiq0AFMYMfImwHlIZ+dBJ2y6CfnMtaFvLwsheyJjpjSg+6peqi1OY+WV/JvvB/pn8l61wyNv486WfLvlnb0WSexPGuYpHdvUdjHsxp1/5tYK5KCqP/TICMhl4vTl/gyMfBl6bm64QHBQnGqH4MyX5J5ZBEy2E+cPCWzWn7dDGpsUi7ax/OJ45+0Zi1kslaE0B+P/M38wFy+4TAUqGwVMlQoH2dWb+7jioNCDR2JBiEyURD7BvYTJQEi0t+mh78bWliBEUYg8u3+LOfeMsZm3OhibOsWaEnO9zNUgi/M6PjsE3soOrJe5hW79sn62xZ/keO7epAEW9ajWfmbIdidCE5zd6BZQPQ2Bbgclhcu1DGauJtoRXYpZcnpzj99dOHhDIY2/50Sbumi/wL+bXx5GTdSgteB9nlSWfhr27IGLq7+vjdKINQHR5OxjOuTdHO7jwMU/x6Xs3YbztMCc4wRoj4mcegfE3AM8R0dWugMku2VMvf6tgn6l7E1sOGStncEOYLxZXVL/hZRu2c" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="dtxMxW42xRL3q951DZHpAxWzOUirVY4bIrhoq0Vr0iI4H3Ax/uNk8iFOnblxhP+nXrMII6ASMUnWZwCQMG8YZK8CxQbkQAvas8l9xrijSPYTkSw7gVyGGxhmd+20wTn/rJuOqGLVS0XXafZozcrA4F9xQqCyYa/EnmrNLNmQonbsj84jFAX89UUPlJsey1AWF0W6hpv7ux2B7OR1RLrnUA5mcJdVOS1pJwPFLRmsqA1S+WvLFzMertQr8bZV2CWyDwS4gwohn6T7H6HgPZJ3JyqG12d8w50LlguMKX+zzjZalAHcpaamX303FaXWx12wEqsRYAxKbGqb34S1G7cdd55Z6Yj+RzWyx18GWSn2hoEPMc2psBtGURuwQ1zbC5tJ23GynUJFNq/gz7z1fSOyvQXhmhRv+E6lunDFebWD3HmmMnpTHJG9Uyb3CDZmGbLFsBTZPcPfY8MLBbX62EzIiLo0wNOvexWMBxwEp+7wGLNq4oyTGPILRDhdP1XYHYcj4ol1RrZWQlP5XjtnEyRkqwlPGABZvKD7KVojzXN3mxbtzDG0LhvsJurpdX/BUDBTfjyIFQ==" />
+        </div>
+        <div style="width:100%; text-align:center">
+            <!-- InstanceBeginEditable name="supercopete" -->
+            <!-- quitamos eticket LIVE
+			<div class="div_i-Desplegada_o-SmartPhone">
+				<div style="width:100%; text-align:center" class="azulbotonfondo" >
+					<div class="ancholimitado" style="text-align:center">
+						<a href="/micuenta.aspx">
+							<img src="images/webpage/homepage/eticketLIVE_entra.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="div_i-Oculta_d-SoloSmartPhone">
+				<div style="width:100%; text-align:center" class="azulbotonfondo" >
+					<div class="ancholimitado" style="text-align:center">
+						<a href="/micuenta.aspx">
+							<img src="images/webpage/homepage/eticketLIVE_entra_movil.png">
+						</a>
+					</div>
+				</div>
+			</div>		
+			<div style="width:100%; text-align:center" class="azulfondo" >
+				<div class="ancholimitado" style="text-align:center">
+					<img src="images/spacer.gif" height="10px">
+				</div>
+			</div>	
+			-->
+            <!-- InstanceEndEditable -->
+            <div id="copete" style="width:100%; text-align:center" class="azulfondo">
+                <div id="Copete_container" class="ancholimitado" style="text-align:center">
+                    <div class="tb" style="width:100%;">
+                        <div class="row">
+                            <div id="logotipo" style="vertical-align:middle;">
+                                <div style="position: relative; min-height: 120px; overflow: hidden;">
+                                    <a href="https://www.eticket.co/home.aspx"><img
+                                            src="images/webpage/copete/logoplecabigmosaico_co.png"
+                                            alt="Venta de boletos en eticket" class="logotipo_principal"
+                                            border="0" /></a>
+                                </div>
+                            </div>
+                            <div id="buscador" style="vertical-align:middle;">
+                                <div style="min-width: 320px; margin:0px auto" class="font14">
+                                    <input id="tBuscar" name="buscar" type="text"
+                                        placeholder="Buscar artistas y/o eventos" class="campoparabusqueda"
+                                        style="width:230px; vertical-align:middle"
+                                        title="Buscar eventos diponibles en eticket" />
+                                    <input id="bBuscar" type="button" value="Buscar" class="goButton font14"
+                                        style="cursor:pointer" />
+                                </div>
+                            </div>
+                            <div id="micuenta_iniciasesion" style="vertical-align:middle; min-width:220px;">
+
+
+                                <!-- inicia: sin login -->
+                                <div class="font14" style="padding:10px 0px">
+                                    <div id="inicia_sesion" class="goButton" style="display:inline-block">Iniciar Sesi�n
+                                    </div>
+                                    <div id="resgitrate_sesion" class="goButton_sec" style="display:inline-block">
+                                        Reg&iacute;strate</div>
+                                </div>
+                                <!-- termina: sin login -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="MenuCompleto">
+                <div id="MenuPrincipal" style="width:100%; text-align:center; position:relative; z-index:20"
+                    class="azulmarinofondo">
+                    <div class="ancholimitado font14" style="text-align:center">
+                        <div class="tb" style="width:100%;">
+                            <div class="row">
+                                <div id="MenuCategoriasHorizontal" class="Col_MenuPrincipalIzq"
+                                    style="text-align:left; vertical-align: top;">
+                                    <div class="tb" style="width:100%; max-width:820px"> <!--era 720 antes de LIVE-->
+                                        <div class="row">
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=1"
+                                                    class="URLMENU" style="display:block">Conciertos</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=3"
+                                                    class="URLMENU" style="display:block">Deportes</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=2"
+                                                    class="URLMENU" style="display:block">Teatro</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=4"
+                                                    class="URLMENU" style="display:block">Culturales</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=8"
+                                                    class="URLMENU" style="display:block">Comedia</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=5"
+                                                    class="URLMENU" style="display:block">Familiares</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=6"
+                                                    class="URLMENU" style="display:block">Congresos</a></div>
+                                            <div class="CatButton col"><a
+                                                    href="https://www.eticket.co/eventos.aspx?categoria=7"
+                                                    class="URLMENU" style="display:block">Festivales</a></div>
+                                            <!-- oculta eticketLIVE
+											<div id="eticketLIVE_LOGO_Container" class="CatButton col"><a href="https://www.eticket.co/eventos.aspx?online=1" class="URLMENU" style="display:block"><img id="eticketLIVE_LOGO" src="https://www.eticket.co/images/webpage/logotipos/eticketlive_small_blanco.png" style="width: 80px;"></a>							
+											</div>
+											-->
+                                            <!--ojo, la ruta de la imagen esta tambien en el js del menuprincipal -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="text-align:right; vertical-align: top;">
+                                    <div id="OtroMenu" class="tb azulfondo" style="width:100%; margin-left:auto;">
+                                        <div class="row">
+                                            <!-- oculta eticketLIVE
+                                            <div id="menu_0" data-submenu="submenu_0" class="CatButton Col_MenuCategoriasDer centrarTexto dropdown menu_contenido" style="vertical-align:middle; position:relative">
+                                                <span class="URLMENU" style="display:block; cursor:default">
+													<img id="eticketLIVE_LOGO" src="https://www.eticket.co/images/webpage/logotipos/eticketlive_small_blanco.png" style="width: 80px;">
+												</span>
+                                            </div>	
+											-->
+                                            <div id="menu_1" data-submenu="submenu_1"
+                                                class="CatButton Col_MenuCategoriasDer centrarTexto dropdown menu_contenido"
+                                                style="vertical-align:middle; position:relative">
+                                                <span class="URLMENU"
+                                                    style="display:block; cursor:default">Categor�as</span>
+                                            </div>
+                                            <div id="menu_2" data-submenu="submenu_2"
+                                                class="CatButton col centrarTexto dropdown menu_contenido"
+                                                style="vertical-align:middle; position:relative">
+                                                <span class="URLMENU" style="display:block; cursor:default">Puntos de
+                                                    venta</span>
+                                            </div>
+                                            <div id="menu_3" data-submenu="submenu_3"
+                                                class="CatButton col centrarTexto dropdown menu_contenido"
+                                                style="vertical-align:middle; position:relative">
+                                                <span class="URLMENU" style="display:block; cursor:default">Ayuda</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="submenus" class="font14 ancholimitado" style="position:relative">
+                    <div id="submenu_0" class="submenu_contenido CatButton" style="background:#ffffff; display:none;">
+                        <div id="submenu_escritorio1">
+                            <a href="https://www.eticket.co/eventos.aspx?online=1">Ver eventos en STREAMING</a>
+                        </div>
+                    </diV>
+                    <div id="submenu_1" class="submenu_contenido CatButton" style="background:#ffffff; display:none;">
+                        <div id="submenu_escritorio1">
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=1">Conciertos</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=3">Deportes</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=2">Teatro</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=4">Culturales</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=8">Comedia</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=5">Familiares</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=6">Congresos</a>
+                            <a href="https://www.eticket.co/eventos.aspx?categoria=7">Festivales</a>
+                        </div>
+                    </diV>
+                    <div id="submenu_2" class="submenu_contenido CatButton" style="background:#ffffff; display:none;">
+                        <div id="submenu_escritorio2">
+                            <div class="tb" style="margin:15px auto">
+                                <div class="row">
+                                    <div class="col" style="padding:0px 5px; vertical-align:top">
+                                        <select name="cPuntosVentaPorEstado" id="cPuntosVentaPorEstado"
+                                            class="puntosdeventa_filtro dk" AutoCompleteType="Disabled">
+                                            <option selected="selected" value="0">TODO COLOMBIA</option>
+                                            <option value="2">ANTIOQUIA</option>
+                                            <option value="4">ATLANTICO</option>
+                                            <option value="15">CUNDINAMARCA</option>
+                                            <option value="31">VALLE DEL CAUCA</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="submenu_3" class="submenu_contenido CatButton" style="background:#ffffff; display:none;">
+                        <div id="submenu_escritorio3">
+                            <a href="https://www.eticket.co/vendeconnosotros.aspx">Vende tu evento con nosotros</a>
+                            <a href="https://www.eticket.co/contenido.aspx?id=5">&iexcl;Recoge tus boletos!</a>
+                            <a href="https://www.eticket.co/dondecomprar.aspx">�Donde Comprar?</a>
+
+                            <a href="https://www.eticket.co/suscribete.aspx">Suscr�bete al Bolet�n</a>
+                            <a href="https://www.eticket.co/promociones.aspx">Promociones</a>
+                            <a href="https://www.eticket.co/contenido.aspx?id=1">Preguntas Frecuentes</a>
+                            <a href="https://www.eticket.co/comunicados.aspx">Comunicados</a>
+                            <a href="https://www.eticket.co/contacto.aspx">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script language="JavaScript" src="/js/v-638078453195677620/eticket_menuprincipal.js"
+                type="text/javascript"></script>
+            <div id="copetes_dinamicos" style="width:100%; text-align:center" class="azulmarinofondo">
+                <!-- InstanceBeginEditable name="Copete_home" -->
+                <script>
+                    jQuery(function () {
+
+                        jQuery('#allinone_bannerRotator_universal').allinone_bannerRotator({
+                            skin: 'universal',
+                            width: 1200,
+                            height: 400,
+                            responsive: true,
+                            //thumbsWrapperMarginBottom:-35,				
+                            autoHideBottomNav: false,
+                            showPreviewThumbs: false,
+                            defaultEffect: 'slideFromRight',
+                            showBottomNav: false,
+                            showNavArrows: false
+                        });
+
+
+                    });
+                </script>
+
+                <!-- 
+            ojo:  
+            en el allinone_bannerRotator.js hay que modificar la ruta agregando el path completo 
+            y remplazando el MOVE por pointer, para que salga la manita en lugar del JALAR 
+            y el archivo cu se remplazo por nuna imagen con el puntero
+             url("+a.absUrl+"/js/brotator/skins/hand.cur),pointer
+             -->
+                <div id="containingDiv" class="ancholimitado azulfondo" style="margin:0px auto">
+
+                    <div id="allinone_bannerRotator_universal" style="display:none;">
+                        <ul class="allinone_bannerRotator_list">
+
+                            <li data-text-id="#allinone_bannerRotator_photoText1"
+                                data-link="masinformacion.aspx?idevento=15334" data-target="_self">
+                                <img src="https://cdn.eticket.co/imagenes/imgEventos/241016155318760_estelar_ESTELAR.jpg"
+                                    alt="HA*ASH" />
+                            </li>
+
+                            <li data-text-id="#allinone_bannerRotator_photoText1"
+                                data-link="masinformacion.aspx?idevento=25418" data-target="_self">
+                                <img src="https://cdn.eticket.co/imagenes/imgEventos/241028170145870_estelar_ESTELAR_1200x400.jpg"
+                                    alt="LES JEUDIS DU PASTEUR: DUO MARGER (FRANCIA) CELLO/PIANO" />
+                            </li>
+
+                            <li data-text-id="#allinone_bannerRotator_photoText1" data-link="eventos.aspx?idartista=802"
+                                data-target="_self">
+                                <img src="https://cdn.eticket.co/imagenes/artistas/241011143716200_performer_img_Estelar.jpg"
+                                    alt="ZARZUELA COLOMBIA" />
+                            </li>
+
+                            <li data-text-id="#allinone_bannerRotator_photoText1" data-link="eventos.aspx?idartista=778"
+                                data-target="_self">
+                                <img src="https://cdn.eticket.co/imagenes/artistas/240918195607586_performer_img_FEP25_CTA1.jpg"
+                                    alt="FESTIVAL EST�REO PICNIC 2025" />
+                            </li>
+
+                            <li data-text-id="#allinone_bannerRotator_photoText1"
+                                data-link="masinformacion.aspx?idevento=25435" data-target="_self">
+                                <img src="https://cdn.eticket.co/imagenes/imgEventos/241108154635698_estelar_ESTELAR.jpg"
+                                    alt="BARRANQUILLA BRILLA CON ELITE" />
+                            </li>
+
+                            <li data-text-id="#allinone_bannerRotator_photoText1" data-link="eventos.aspx?idartista=477"
+                                data-target="_self">
+                                <img src="https://cdn.eticket.co/imagenes/artistas/240307072456613_performer_img_estelarcepeda.jpg"
+                                    alt="ANDR�S CEPEDA" />
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- adios a la barra naranja
+            <div class="naranjafondo font22 blanco boldear800" style="width:100%; padding:20px 0px; position:relative" >
+                <div style="position:absolute; top:-19px; width:100%; z-index:1; ">
+                    <img src="../images/webpage/copete/chipote.png" width="76" height="19" />
+                </div>
+                <div style="margin:0px 20px">
+                    Disfruta de los pr�ximos eventos que tenemos para t�.
+                </div>
+            </div>   
+			-->
+                <div class=" font22 blanco boldear800" style="width:100%; padding:10px 0px; position:relative">
+                </div>
+                <div class="grismuyclarofondo" style="margin-top:3px"></div>
+                <!-- InstanceEndEditable -->
+            </div>
+            <div class="grismuyclarofondo" style="width:100%">
+                <!-- InstanceBeginEditable name="titulo_copete" -->
+
+                <div class="azulfondo font22 blanco boldear" style="width:100%; min-height:60px; vertical-align:middle">
+                    <div id="filtros_listados" class="azulfondo font22 blanco boldear" style="width:100%; display:none">
+                        <div
+                            style="display:inline-block; width:50%; max-width:350px; min-width:300px;  vertical-align:middle; text-align:center">
+                            <select name="cFiltroCategoria" id="cFiltroCategoria"
+                                class="eventos_listado eventos_listado_categorias dk">
+                                <option selected="selected" value="0">TODOS LOS EVENTOS</option>
+                                <option value="1">Conciertos</option>
+                                <option value="2">Teatro</option>
+                                <option value="3">Deportes</option>
+                                <option value="4">Culturales</option>
+                                <option value="5">Familiares</option>
+                                <option value="6">Congresos</option>
+                                <option value="7">Festivales</option>
+                                <option value="8">Comedia</option>
+
+                            </select>
+                        </div><!-- Truco para matar el espacio en blanco           
+                        -->
+                        <div
+                            style="display:inline-block; width:50%; max-width:350px; min-width:300px; vertical-align:middle; text-align:center">
+                            <select name="cFiltroEstado" id="cFiltroEstado"
+                                class="eventos_listado eventos_listado_estados dk">
+                                <option selected="selected" value="0">TODO COLOMBIA</option>
+                                <option value="2">ANTIOQUIA</option>
+                                <option value="4">ATLANTICO</option>
+                                <option value="6">BOLIVAR</option>
+                                <option value="8">CALDAS</option>
+                                <option value="15">CUNDINAMARCA</option>
+                                <option value="20">MAGDALENA</option>
+                                <option value="28">SANTANDER</option>
+                                <option value="31">VALLE DEL CAUCA</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- InstanceEndEditable -->
+                <div class="ancholimitado" style="margin-top:10px">
+                    <div class="tb" style="width:100%; text-align:center">
+                        <div class="row">
+                            <div class="col coreccion_ancho_100" style="vertical-align:top;">
+                                <div id="contenedor_principal">
+
+                                    <!-- antes tenia este borde la imagen style="border:#003366 1px solid; -->
+                                    <div>
+
+                                    </div>
+
+
+                                    <!-- InstanceBeginEditable name="contenido" -->
+                                    <!-- inicia contenido principal-->
+
+                                    <!--EVENTOS ETICKET LIVE-->
+
+
+                                    <div style="margin:0px 0px 10px 0px">
+                                        <div style="background-color:#ffffff; padding:1px 10px ; border:none"
+                                            align="center">
+
+                                        </div>
+                                    </div>
+
+                                    <!--EVENTOS NORMALES-->
+                                    <div class="azulfondo font14 blanco boldear"
+                                        style="vertical-align: middle; margin-top: 10px">
+                                        <div style="padding: 5px 0px">
+                                            EVENTOS EN TU CIUDAD
+                                        </div>
+                                    </div>
+                                    <div style="margin:0px 0px 10px 0px">
+                                        <div style="background-color:#ffffff; padding:1px 10px ; border:none"
+                                            align="center">
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=810">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241028165042470_performer_img2_CAT 2 550x385.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt=" DUO MARGER">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            DUO MARGER
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=810">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=773">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240926092554767_performer_img2_cat2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt=" JAISON NEUTRA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            JAISON NEUTRA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=773">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=804">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241031113922247_performer_img2_ETICKET_AB_CTA2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="ANDREA BOCELLI">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            ANDREA BOCELLI
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=804">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=477">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240307072456663_performer_img2_cta2cepeda.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="ANDR�S CEPEDA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            ANDR�S CEPEDA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            MULTIPLES CIUDADES
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=477">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=803">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241010124611824_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="APOLO 7">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            APOLO 7
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=803">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=791">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241018080458574_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="AVENTURA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            AVENTURA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            MULTIPLES CIUDADES
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=791">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=813">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241108154405586_performer_img2_CAT 2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="BARRANQUILLA BRILLA CON ELITE">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            BARRANQUILLA BRILLA CON ELITE
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BARRANQUILLA
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=813">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=707">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241114201104600_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="BRESH">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            BRESH
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=707">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=716">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241114090853904_performer_img2_CAT2DRUNK.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="DRUNK COMEDY">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            DRUNK COMEDY
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=716">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=635">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240411191134952_performer_img2_cat2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="FERXXO">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            FERXXO
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            MEDELL�N
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=635">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=778">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240918195607655_performer_img2_FEP25_CTA2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="FESTIVAL EST�REO PICNIC 2025">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            FESTIVAL EST�REO PICNIC 2025
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=778">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=807">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241021152206057_performer_img2_cat2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="FONSECA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            FONSECA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            MULTIPLES CIUDADES
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=807">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=811">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241113055634847_performer_img2_CTA2- GRATA.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="GRATA 2025">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            GRATA 2025
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            CARTAGENA
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=811">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=805">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241016155229379_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="HAASH">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            HAASH
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=805">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=674">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241114134703738_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="I LOVE 90S">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            I LOVE 90S
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            MULTIPLES CIUDADES
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=674">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=764">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240724122710569_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="JUANPIS LIVE SHOW: MAKE COLOMBIA GREAT AGAIN">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            JUANPIS LIVE SHOW: MAKE COLOMBIA GREAT AGAIN
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=764">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=789">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240918111438712_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="LEO RIZZI">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            LEO RIZZI
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=789">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=814">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241109084857980_performer_img2_CAT 2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="LES JEUDIS DU PASTEUR: SINFONIA NO.9 BEETHOVEN ">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            LES JEUDIS DU PASTEUR: SINFONIA NO.9 BEETHOVEN
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=814">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=612">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241009195321506_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="MACA & GERO">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            MACA & GERO
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=612">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=798">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241001101312749_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="MAREH">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            MAREH
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=798">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=730">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241031150522425_performer_img2_CTA2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="MILO J">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            MILO J
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=730">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=794">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240926104917472_performer_img2_Cat 2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="NASA HISTOIRES">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            NASA HISTOIRES
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=794">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=815">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241113091300941_performer_img2_CAT_2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="NEW YEAR EVE PARTY">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            NEW YEAR EVE PARTY
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            GUACHACA
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=815">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=416">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240814162656664_performer_img2_2CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="OHLAVILLE">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            OHLAVILLE
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=416">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=774">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240809143341078_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="PAULA ARENAS">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            PAULA ARENAS
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=774">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=793">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241001150753988_performer_img2_SHAKPIEZAS_BOG_CTA2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="SHAKIRA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            SHAKIRA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            MULTIPLES CIUDADES
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=793">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=747">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240924082557108_performer_img2_SIDDHARTHA_CTA2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="SIDDHARTHA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            SIDDHARTHA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=747">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=792">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240919214809593_performer_img2_car2.png"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="V FOR VOLUME">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            V FOR VOLUME
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=792">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=790">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240918153155872_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="VALE GARZON">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            VALE GARZON
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=790">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=739">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241031194644861_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="VASSAR FERIA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            VASSAR FERIA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=739">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=785">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240910095804384_performer_img2_CAT-2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="VILLA ARRUGA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            VILLA ARRUGA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=785">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=782">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/240910164127920_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="VINO AL PARQUE V EDICI�N DESPIERTA TUS SENTIDOS">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            VINO AL PARQUE V EDICI�N DESPIERTA TUS SENTIDOS
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=782">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="font14 borde_sencillo listado_artistas"
+                                                style="position:relative; display:inline-block" align="center">
+                                                <a href="../eventos.aspx?idartista=802">
+                                                    <div class="" style="overflow: hidden;">
+
+                                                        <img data-src="https://cdn.eticket.co/imagenes/artistas/241011143716280_performer_img2_CAT2.jpg"
+                                                            class="imagen_artista_small lazyload" border="0"
+                                                            alt="ZARZUELA COLOMBIA">
+
+                                                    </div>
+                                                    <div class="font14 boldear800 container-clamp" style="height:57px;">
+                                                        <!--style="margin:5px auto; height:57px; display:table-cell; vertical-align:middle"-->
+                                                        <div class="line-clamp-3 grisoscuro" style="margin:0px 5px">
+                                                            ZARZUELA COLOMBIA
+                                                        </div>
+                                                    </div>
+                                                    <div class="font12 borde_sencillo_top"
+                                                        style="vertical-align:middle ">
+                                                        <div class="line-clamp-1 grisoscuro" style="margin:5px 5px">
+                                                            BOGOT�
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div style="margin:0px auto; position:relative">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="../eventos.aspx?idartista=802">Ver Eventos</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- termina contenido principal-->
+                                    <!-- InstanceEndEditable -->
+                                </div>
+                            </div>
+
+                            <div id="publicidad" class="col" style="width:246px; vertical-align:top;">
+                                <!--era 216 pero con el padding de 20px y el margin de 10px lo deje en 246-->
+                                <!--incia eventos de micuenta-->
+                                <div id="miseventos_mini" class="espacio_margen_fondo_blanco" align="center">
+                                    <div class="font14 azul boldear800" style="text-align:left">
+                                        Mis Eventos
+                                    </div>
+
+                                    <div class="grisfondo" style="margin:5px auto 10px auto"><img
+                                            src="images/spacer.gif" height="1" width="100%" /></div>
+
+
+                                    <div class="borde_sencillo font14 gris"
+                                        style="padding: 10px 10px; margin-bottom:10px">
+                                        <!-- inicia: sin login 
+												Tus boletos para los pr�ximos eventos se muestran aqu�.
+												<div class="font14" style="max-width:140px;">
+													<div class="goButton" style="display:block; margin-top:5px"><a href="https://www.eticket.co/micuenta.aspx" class="URLBLANCA">Iniciar Sesi�n</a></div>
+													<div class="goButton_sec"  style="display:block; margin-top:5px"><a href="https://www.eticket.co/micuenta.aspx" class="URLBLANCA">Reg&iacute;strate</a></div>
+												</div>   
+											<!-- termina: sin login -->
+                                        <!-- inicia: con login -->
+                                        <div>
+                                            listado de eventos
+                                        </div>
+                                        <!-- termina: con login -->
+                                    </div>
+                                </div>
+                                <!--termina eventos de micuenta-->
+                                <!-- inicia equipos deportivo-->
+                                <!-- si no existen elementos , no mostrar toda esta secci�n -->
+
+                                <!-- termina equipos deportivo-->
+
+                                <!-- inicia inmuebles-->
+                                <!-- si no existen elementos , no mostrar toda esta secci�n -->
+
+                                <!-- termina inmuebles-->
+
+                                <!-- inicia Ciudades-->
+                                <!-- si no existen elementos , no mostrar toda esta secci�n -->
+
+                                <!-- termina Ciudades-->
+
+                                <!-- inicia: informacion de utilidad-->
+                                <div id="lateral_infoutilidad" class="espacio_margen_fondo_blanco" style="display:none"
+                                    align="center">
+                                    <div class="font14 azul boldear800" style="text-align:left">
+                                        Informaci�n de Utilidad
+                                    </div>
+
+                                    <div class="grisfondo" style="margin:5px auto 10px auto"><img
+                                            src="images/spacer.gif" height="1" width="100%" /></div>
+
+                                </div>
+                                <!-- termina: informacion de utilidad-->
+
+                                <!-- inicia: otros artistas-->
+                                <div id="lateral_destacados" class="espacio_margen_fondo_blanco" style="display:none"
+                                    align="center">
+                                    <div class="font14 azul boldear800" style="text-align:left">
+                                        Espect�culos Pr�ximos
+                                    </div>
+
+                                    <div class="grisfondo" style="margin:5px auto 10px auto"><img
+                                            src="images/spacer.gif" height="1" width="100%" /></div>
+
+                                    <div style="margin:10px 0px 20px;" class="font14 boldear800" align="center">
+                                        <a class="URLGRISOSCURO" href="eventos.aspx?idartista=802">ZARZUELA COLOMBIA</a>
+                                        <div class="borde_sencillo font14 gris"
+                                            style="padding:0px 0px; margin:5px auto">
+                                            <div class="borde_sencillo_blanco">
+                                                <div class="borde_sencillo">
+                                                    <a href="eventos.aspx?idartista=802"><img
+                                                            data-src="https://cdn.eticket.co/imagenes/artistas/241011143716200_performer_img_Estelar.jpg"
+                                                            class="lazyload" width="100%" border="0"
+                                                            alt="ZARZUELA COLOMBIA"></a>
+                                                </div>
+                                                <div style="margin:0px auto">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="eventos.aspx?idartista=802">Ver Eventos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin:10px 0px 20px;" class="font14 boldear800" align="center">
+                                        <a class="URLGRISOSCURO" href="eventos.aspx?idartista=730">MILO J</a>
+                                        <div class="borde_sencillo font14 gris"
+                                            style="padding:0px 0px; margin:5px auto">
+                                            <div class="borde_sencillo_blanco">
+                                                <div class="borde_sencillo">
+                                                    <a href="eventos.aspx?idartista=730"><img
+                                                            data-src="https://cdn.eticket.co/imagenes/artistas/241031150522374_performer_img_CTA1.jpg"
+                                                            class="lazyload" width="100%" border="0" alt="MILO J"></a>
+                                                </div>
+                                                <div style="margin:0px auto">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="eventos.aspx?idartista=730">Ver Eventos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin:10px 0px 20px;" class="font14 boldear800" align="center">
+                                        <a class="URLGRISOSCURO" href="eventos.aspx?idartista=791">AVENTURA</a>
+                                        <div class="borde_sencillo font14 gris"
+                                            style="padding:0px 0px; margin:5px auto">
+                                            <div class="borde_sencillo_blanco">
+                                                <div class="borde_sencillo">
+                                                    <a href="eventos.aspx?idartista=791"><img
+                                                            data-src="https://cdn.eticket.co/imagenes/artistas/241018080458449_performer_img_CAT1.jpg"
+                                                            class="lazyload" width="100%" border="0" alt="AVENTURA"></a>
+                                                </div>
+                                                <div style="margin:0px auto">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="eventos.aspx?idartista=791">Ver Eventos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin:10px 0px 20px;" class="font14 boldear800" align="center">
+                                        <a class="URLGRISOSCURO" href="eventos.aspx?idartista=773"> JAISON NEUTRA</a>
+                                        <div class="borde_sencillo font14 gris"
+                                            style="padding:0px 0px; margin:5px auto">
+                                            <div class="borde_sencillo_blanco">
+                                                <div class="borde_sencillo">
+                                                    <a href="eventos.aspx?idartista=773"><img
+                                                            data-src="https://cdn.eticket.co/imagenes/artistas/240815152926513_performer_img_cat1.jpg"
+                                                            class="lazyload" width="100%" border="0"
+                                                            alt=" JAISON NEUTRA"></a>
+                                                </div>
+                                                <div style="margin:0px auto">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="eventos.aspx?idartista=773">Ver Eventos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin:10px 0px 20px;" class="font14 boldear800" align="center">
+                                        <a class="URLGRISOSCURO" href="eventos.aspx?idartista=635">FERXXO</a>
+                                        <div class="borde_sencillo font14 gris"
+                                            style="padding:0px 0px; margin:5px auto">
+                                            <div class="borde_sencillo_blanco">
+                                                <div class="borde_sencillo">
+                                                    <a href="eventos.aspx?idartista=635"><img
+                                                            data-src="https://cdn.eticket.co/imagenes/artistas/240411191134902_performer_img_cat1.jpg"
+                                                            class="lazyload" width="100%" border="0" alt="FERXXO"></a>
+                                                </div>
+                                                <div style="margin:0px auto">
+                                                    <a class="URLBLANCA goButton_bloque"
+                                                        href="eventos.aspx?idartista=635">Ver Eventos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- termina: otros artistas-->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inicia div Seccion footer-->
+            <div id="piepagina">
+
+                <div align="center">
+                    <div class="azulbotonfondo" style="width:100%; text-align:center;" align="center">
+                        <!-- este ponlo al 100% si quieres que la tabla sea de extremo a extremo  � al max-width:1200px -->
+                        <img src="images/spacer.gif" height="1px" />
+                    </div>
+                </div>
+
+                <div style="width:100%" class="negrofondo">
+                    <img src="images/spacer.gif" width="1" height="10" />
+                </div>
+
+                <div class="grisoscurofondo" style="width:100%" align="center">
+
+                    <div style="text-align:left; min-width:320px; max-width:1200px; width:100%; vertical-align:top;"
+                        class="font14">
+                        <!-- los comentarios se dejan para que tomar el ancho completo: http://stackoverflow.com/questions/18262300/two-inline-block-elements-each-50-wide-do-not-fit-side-by-side-in-a-single-ro --->
+                        <div id="pie_columna_1">
+                            <div><a href="https://www.eticket.co/home.aspx" class="URLBLANCA"
+                                    style="display:block">Inicio</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=1" class="URLBLANCA"
+                                    style="display:block">Conciertos</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=3" class="URLBLANCA"
+                                    style="display:block">Deportes</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=2" class="URLBLANCA"
+                                    style="display:block">Teatro</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=4" class="URLBLANCA"
+                                    style="display:block">Culturales</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=8" class="URLBLANCA"
+                                    style="display:block">Comedia</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=5" class="URLBLANCA"
+                                    style="display:block">Familiares</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=6" class="URLBLANCA"
+                                    style="display:block">Congresos</a></div>
+                            <div><a href="https://www.eticket.co/eventos.aspx?categoria=7" class="URLBLANCA"
+                                    style="display:block">Festivales</a></div>
+                            <!-- oculta eticketLIVE
+							<div><a href="https://www.eticket.co/eventos.aspx?online=1" class="URLBLANCA" style="display:block">eticketLIVE</a></div>   
+							-->
+                        </div><!--
+                     -->
+                        <div id="pie_columna_2">
+                            <div><a href="https://www.eticket.co/contenido.aspx?id=5" class="URLBLANCA">�Recoge tus
+                                    boletos!</a></div>
+                            <div><a href="https://www.eticket.co/dondecomprar.aspx" class="URLBLANCA"> Ubicaci&oacute;n
+                                    de Puntos de venta</a></div>
+
+                            <div><a href="https://www.eticket.co/suscribete.aspx" class="URLBLANCA">Suscr&iacute;bete al
+                                    bolet&iacute;n</a></div>
+                            <div><a href="https://www.eticket.co/promociones.aspx" class="URLBLANCA">Promociones</a>
+                            </div>
+                            <div><a href="https://www.eticket.co/vendeconnosotros.aspx" class="URLBLANCA">Vende tus
+                                    boletos en eticket</a></div>
+                            <div><a href="https://www.eticket.co/contenido.aspx?id=1" class="URLBLANCA">Preguntas
+                                    Frecuentes</a></div>
+                            <div><a href="https://www.eticket.co/comunicados.aspx" class="URLBLANCA">Comunicados</a>
+                            </div>
+                            <div><a href="https://www.eticket.co/contacto.aspx" class="URLBLANCA">Cont�ctanos</a></div>
+                            <div><a href="https://www.eticket.co/avisodeprivacidad\" class="URLBLANCA">Pol&iacute;ticas
+                                    de Privacidad</a></div>
+                            <div><a href="https://www.eticket.co/terminosycondiciones\" class="URLBLANCA">T�rminos y
+                                    Condiciones</a></div>
+
+                            <div><a href="https://serviciocliente.eticket.com.co/" target="_blank"
+                                    class="URLBLANCA">PQRS</a></div>
+                            <div><a href="http://pulep.mincultura.gov.co" target="_blank" class="URLBLANCA">PULEP</a>
+                            </div>
+                            <div><a href="http://www.sic.gov.co" target="_blank" class="URLBLANCA">SIC</a></div>
+
+                        </div><!--
+                     -->
+                        <div id="pie_columna_3">
+                            <div>
+
+                                <a href="https://wa.me/573503100460" target="_self"
+                                    onClick="gtag('event', 'Template_Principal', {'event_category': 'Grande', 'event_label': 'Atenci�n Telefonica a Clientes'});">
+
+                                    <img data-src="https://cdn.eticket.co/imagenes/imgbnrs/241119161638233_banner_BANNERS-WEB_WS_1.gif"
+                                        class="lazyload" width="500" alt="Atenci�n Telefonica a Clientes">
+                                </a>
+
+                                <div class="grisfondo" style="margin:5px auto 10px auto"><img src="images/spacer.gif"
+                                        height="1" width="100%" /></div>
+                                <div class="font12 blanco" style="text-align:left">
+                                    <div style="display:inline-block; margin-left:0px">
+                                        <div class="tb">
+                                            <div class="row">
+                                                <div class="col"
+                                                    style="vertical-align:middle; width:28px; text-align:left">
+                                                    <a target="_blank" href="https://www.twitter.com/eticketcol"><img
+                                                            src="/images/webpage/redes/2016/twitter.png" width="25px"
+                                                            alt="twitter" style="border:none" /></a>
+                                                </div>
+                                                <div class="col" style="vertical-align:middle">
+                                                    <a class="URLBLANCA" target="_blank"
+                                                        href="https://www.twitter.com/eticketcol">S�guenos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div style="display:inline-block; margin-left:8px">
+                                        <div class="tb">
+                                            <div class="row">
+                                                <div class="col"
+                                                    style="vertical-align:middle; width:28px; text-align:left">
+                                                    <a target="_blank" href="https://www.instagram.com/eticketcol"><img
+                                                            src="/images/webpage/redes/2016/instagram.png" width="25px"
+                                                            alt="instagram" style="border:none" /></a>
+                                                </div>
+                                                <div class="col" style="vertical-align:middle">
+                                                    <a class="URLBLANCA" target="_blank"
+                                                        href="https://www.instagram.com/eticketcol">M�ranos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div style="display:inline-block; margin-left:8px">
+                                        <div class="tb">
+                                            <div class="row">
+                                                <div class="col"
+                                                    style="vertical-align:middle; width:28px; text-align:left">
+                                                    <a target="_blank" href="https://www.facebook.com/eticketcol"><img
+                                                            src="/images/webpage/redes/2016/facebook.png" width="25px"
+                                                            alt="facebook" style="border:none" /></a>
+                                                </div>
+                                                <div class="col" style="vertical-align:middle">
+                                                    <a class="URLBLANCA" target="_blank"
+                                                        href="https://www.facebook.com/eticketcol">Qui�renos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="font12 blanco" style="text-align:left">
+
+                                    <div style="display:inline-block; margin-left:0px">
+                                        <div class="tb">
+                                            <div class="row">
+                                                <div class="col" style="vertical-align:middle">
+                                                    La vida esta llena de experiencias...<br> #experienciaeticket
+                                                </div>
+                                                <div class="col font16"
+                                                    style="vertical-align:middle; width:30px; text-align:center; margin-left:5px">
+                                                    &nbsp;&#128516;&nbsp;
+                                                    <!--
+                                                    <img src="/images/webpage/redes/2016/snapchat.png" width="25px" alt="snapchat" style="border:none" />
+													-->
+                                                </div>
+                                                <div class="col" style="vertical-align:middle">
+                                                    <!--
+                                                        #experienciaeticket
+													-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="width:100%">
+                        <img src="/images/spacer.gif" width="1" height="5" />
+                    </div>
+
+                </div>
+
+                <div style="width:100%;" align="center" class="negrofondo">
+                    <div class="font14 boldear600 blanco" style="padding:10px 0px">
+                        &copy; 2024 :: eticket :: Todos los Derechos Reservados :: https://www.eticket.co/
+                    </div>
+                </div>
+
+            </div>
+            <!-- Termina div Seccion footer-->
+        </div>
+    </form>
+</body>
+<!-- InstanceEnd -->
+
+</html>

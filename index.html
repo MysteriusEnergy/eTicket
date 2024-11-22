@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <title>Document</title>
+</head>
+
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    </style>
+
+<body>
+    <header>
+        <div class="fondo_azul"> 
+            <div class="container_header">
+                <img src="./assets/logoplecabigmosaico_co.png" alt="logo de ticket">
+
+                <div class="container_buscador">
+                    <input class="buscador" type="text" placeholder="Buscar artistas y/o eventos">
+
+                    <button class="button_buscar" type="button" style="height: 33px;">Buscar</button>
+                </div>
+
+                <div class="inicia_sesion_registrarse">
+                    <button class="button_iniciar" type="button">Iniciar Sesion</button>
+                    <button class="button_registrarse" type="button">Registrate</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nanvbar -->
+
+<div class="fondo_carrusel" style="background-color: #002A4A; height: 420px;">
+    <nav>
+        <ul class="nav nav-tabs" style="justify-content: center;" >
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Conciertos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Deportes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Teatro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Culturales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Comedia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Familiares</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Congresos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Festivales</a>
+            </li>
+
+            <li class="nav-item dropdown" style="margin-left: 150px;">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false ">Punto de venta</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Ayuda</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Carrusel -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner d-flex">
+          <div class="carousel-item active">
+
+            <!--Clase mx-auto para centrar horizontalmente contenido de nivel de bloque de ancho fijo-->
+            <img src="./assets/estellar.jpg" class="d-block mx-auto w-50 h-100" alt="..."> 
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/milo.jpg" class="d-block mx-auto w-50 h-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/vform.png" class="d-block mx-auto w-50 h-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<section>
+    <!-- Parte de eventos y ciudad  -->
+    <!-- Div para el fondo del dropdown -->
+    <div class="fondo_dropdown_eventos">
+
+        <!-- BOTON TODOS LOS EVENTOS -->
+        <div class="d-flex justify-content-center">
+            <div class="dropdown me-4">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-offset="10,20"><i class="bi bi-list m-4 fs-6"></i> TODOS LOS EVENTOS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <!-- DESPLIEGUE COLOMBIA -->
+            <div class="btn-group">
+
+                <div class="d-flex justify-content-center">
+                    <div class="dropdown me-1">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20"> <i class="bi bi-geo-alt m-4 fs-6"></i> TODO
+                            COLOMBIA
+
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="fondo_cards">
+
+    <!-- Título de la sección -->
+    <div class="container-fluid bg-dark text-white p-2 mb-4 mt-3 text-center">
+        <h2>EVENTOS EN TU CIUDAD</h2>
+    </div>
+
+    <!-- Grid de eventos -->
+    <div class="container bg-white">
+        <div class="row g-4">
+            <!-- Jaison Neutra -->
+            <div class="col-md-3">
+                <div class="card h-100 ">
+                    <img src="/path-to-jaison-image.jpg" class="card-img-top" alt="Jaison Neutra">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">JAISON NEUTRA</h5>
+                        <p class="card-text">BOGOTÁ</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Andrea Bocelli -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-bocelli-image.jpg" class="card-img-top" alt="Andrea Bocelli">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ANDREA BOCELLI</h5>
+                        <p class="card-text">BOGOTÁ</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Andrés Cepeda -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-cepeda-image.jpg" class="card-img-top" alt="Andrés Cepeda">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ANDRÉS CEPEDA</h5>
+                        <p class="card-text">MULTIPLES CIUDADES</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apolo 7 -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-apolo-image.jpg" class="card-img-top" alt="Apolo 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">APOLO 7</h5>
+                        <p class="card-text">BOGOTÁ</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aventura -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-aventura-image.jpg" class="card-img-top" alt="Aventura">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">AVENTURA</h5>
+                        <p class="card-text">MULTIPLES CIUDADES</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barranquilla Brilla -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-barranquilla-image.jpg" class="card-img-top" alt="Barranquilla Brilla con Elite">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BARRANQUILLA BRILLA CON ELITE</h5>
+                        <p class="card-text">BARRANQUILLA</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bresh -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-bresh-image.jpg" class="card-img-top" alt="Bresh">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BRESH</h5>
+                        <p class="card-text">BOGOTÁ</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drunk Comedy -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/path-to-drunk-comedy-image.jpg" class="card-img-top" alt="Drunk Comedy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">DRUNK COMEDY</h5>
+                        <p class="card-text">BOGOTÁ</p>
+                    </div>
+                    <div class="card-footer text-center bg-primary">
+                        <a href="#" class="btn btn-primary w-50 text-white bg-primary">Ver Eventos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container_footer">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Conciertos</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Teatro</a></li>
+                <li><a href="#">Culturales</a></li>
+                <li><a href="#">Comedia</a></li>
+                <li><a href="#">Familiares</a></li>
+                <li><a href="#">Congresos</a></li>
+                <li><a href="#">Festivales</a></li>
+            </ul>
+        </div>
+    
+        <div class="info">
+            <ul>
+                <li><a href="#">¡Recoge tus boletos!</a></li>
+                <li><a href="#">Ubicación de Puntos de venta</a></li>
+                <li><a href="#">Suscríbete al boletín</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Vende tus boletos en eticket</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Comunicados</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    
+        <div class="contact">
+            <a href="#" class="whatsapp">Whatsapp 350 310 0460</a>
+            <div class="social">
+                <a href="#">🐦</a>
+                <a href="#">📸</a>
+                <a href="#">👍</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="copyright">
+        &copy; 2024 :: eticket :: Todos los Derechos Reservados :: <a
+            href="https://www.eticket.co/">https://www.eticket.co/</a>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

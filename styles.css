@@ -1,0 +1,214 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.fondo_azul {
+    background-color: #003366;
+    height: 140px;
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 350px;
+}
+
+/* Configuracion logo */
+img {
+    width: 275px;
+    height: 111.662px;
+    margin: 15px;
+}
+
+
+.container_buscador {
+    display: flex;
+    width:  400px;
+    margin: 50px 150px;
+    gap: 5px;
+}
+
+/* Estilos para el buscador */
+.buscador {
+    padding: 0 4px;
+    height: 36px;
+    width: 230px;
+    border: 3px solid #125cb7;
+    border-radius: 5px;
+}
+
+/* Estilos para el boton de buscar */
+.button_buscar {
+    background-color: #125cb7;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+/* Contenedor del registro */
+.inicia_sesion_registrarse {
+    margin: 50px 10px 0 0;
+    display: flex;
+
+}
+
+/* Estilos para el boton de iniciar y registrarse */
+.button_iniciar , .button_registrarse {
+    width: 126px;
+    height: 40px;
+    font-weight: bold;
+    padding: 7px 10px;
+    color: #fff;
+    background-color: #125cb7;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* Boton de Registrarse  */
+.button_registrarse {
+    border: none;
+    background-color: #003366;
+}
+
+
+.fondo_dropdown_eventos {
+    margin-top: 3px;
+    background-color: #003366;
+    height: 63px;
+    
+
+}
+
+.btn {
+    padding: 20px;
+    margin: 0 20px ;
+    font-weight: bold;
+    background-color: #003366;
+    border: none;
+    height: 63px;
+    width: 300px;
+    font-size: 14px;
+}
+
+
+/* Cards */
+
+.fondo_cards {
+    background-color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.container-fluid {
+    width: 1200px;
+    height: 30px;
+
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-footer {
+    border: none;
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #0052cc;
+    border: none;
+    padding: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #003d99;
+}
+
+/* Título de la sección */
+.bg-dark {
+    background-color: #002855 !important;
+}
+
+/* Espaciado */
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.g-4 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1e2126;
+    color: #fff;
+    padding: 10px;
+}
+
+ul , li,  a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+footer .copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer .copyright a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer .copyright a:hover {
+    text-decoration: underline;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-md-3 {
+        margin-bottom: 1.5rem;
+    }
+}
